@@ -1,0 +1,26 @@
+{
+  "name": "new-database-testing",
+  "version": "1.0.0",
+  "description": "trying to make a database and testing to see if it works",
+  "keywords": [
+    "database"
+  ],
+  "license": "ISC",
+  "author": "Krish Bhardwaj",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
