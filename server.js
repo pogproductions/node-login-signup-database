@@ -16,7 +16,7 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 
 const { MongoClient, ServerApiVersion, Db } = require('mongodb');
-const uri = "mongodb+srv://krishbhardwaj250:falRPtg5tGaTFoGu@userdatabase.myn1jqr.mongodb.net/?retryWrites=true&w=majority&appName=UserDatabase";
+const uri = process.env.MONGO_URI;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
